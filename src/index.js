@@ -1,9 +1,7 @@
-import { fetchBooksCategories, fetchTopBooks } from "./book_API";
-
-fetchBooksCategories().then(responce => responce.data.map(category => console.log(category.list_name))).catch(onFetchError);
-fetchTopBooks().then(responce => responce.data.map(book => console.log(book.list_name, book.books))).catch(onFetchError);
-
-function onFetchError(error) {
-  console.log(error);
-}
-
+// В папці js створюємо файлик в якому бедете працювати та імпортуєте його сюди
+import './js/modal.js';
+import './js/book-list.js';
+import './js/mobile-menu.js';
+import './js/shopping-list.js';
+import './js/scroll-up.js';
+import './js/modal-window-info-book.js';
